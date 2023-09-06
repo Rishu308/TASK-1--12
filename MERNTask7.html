@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* Horizontal Navigation */
+.horizontal-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #d3cbdf; /* Change the background color to grey */
+}
+
+.horizontal-nav li {
+  float: left;
+  border-right: 1px solid #070faa; /* Border color for all list items */
+}
+
+.horizontal-nav li:last-child {
+  border-right: none; /* Remove the border from the last list item */
+}
+
+.horizontal-nav li a {
+  display: block;
+  color: #070faa; /* Text color for Java, HTML, and CSS buttons */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to black (#111) on hover */
+.horizontal-nav li a:hover {
+  background-color: #111;
+  color: #fff; /* Text color on hover */
+}
+
+/* Active link style for Home in horizontal navigation */
+.horizontal-nav li a.active {
+  background-color: #474646; /* Background color for the active page */
+  color: #f7f7f7; /* Text color for the active page */
+}
+
+/* Vertical Navigation */
+.vertical-nav {
+  background-color: #c0e2e2; /* Light blue background color for the vertical bar */
+  width: 200px; /* Adjust the width as needed */
+  float: left; /* Float the vertical bar to the left */
+}
+
+.vertical-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left; /* Align items to the left */
+}
+
+.vertical-nav li {
+  /* Remove borders */
+}
+
+.vertical-nav li:last-child {
+  border-bottom: none; /* Remove the border from the last list item */
+}
+
+.vertical-nav li a {
+  display: block;
+  color: #070faa; /* Text color for Java, HTML, and CSS buttons */
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to black (#111) on hover */
+.vertical-nav li a:hover {
+  background-color: #111;
+  color: #fff; /* Text color on hover */
+}
+
+/* Active link style for Home in vertical navigation */
+.vertical-nav li a.active {
+  background-color: orange; /* Background color for the active page */
+  color: #fff; /* Text color for the active page */
+}
+</style>
+</head>
+<body>
+
+<!-- Horizontal Navigation -->
+<ul class="horizontal-nav">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#about">Java</a></li>
+  <li><a href="#services">HTML</a></li>
+  <li><a href="#portfolio">CSS</a></li>
+  <li><a href="#contact"></a></li>
+</ul>
+
+<!-- Vertical Navigation -->
+<div class="vertical-nav">
+  <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#about">Java</a></li>
+    <li><a href="#services">HTML</a></li>
+    <li><a href="#portfolio">CSS</a></li>
+    <li><a href="#bootstrap">Bootstrap</a></li> <!-- Added Bootstrap item -->
+  </ul>
+</div>
+
+</body>
+</html>

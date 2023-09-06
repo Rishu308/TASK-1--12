@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  table {
+    width: 100%;
+  }
+
+  td {
+    padding: 5px;
+  }
+
+  .form-table {
+    display: table;
+  }
+
+  .form-row {
+    display: table-row;
+  }
+
+  .form-label {
+    display: table-cell;
+    vertical-align: left;
+    text-align: left;
+    padding-left: 200px;
+    width: 30%; 
+  }
+
+  .form-input {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 10px;
+    width: 70%;
+  }
+
+  .form-input input[type="text"],
+  .form-input input[type="number"] {
+    border-color: #d3d3d3
+    width: 100%;
+    padding: 5px;
+    border: 1px 
+    border-radius: 0;
+    margin-bottom: 10px;
+  }
+
+  #password
+  {
+    border-color: #d3d3d3
+    width: 90%;
+    padding: 5px;
+    border: 1px
+    border-radius: 0;
+    margin-bottom: 10px;
+  }
+  #gender
+  {
+    height: 25px;
+    border-color: #d3d3d3
+    width: 100px;
+    border: 1px
+    border-radius: 0;
+  }
+
+  #save
+  {
+    color: black;
+    border-radius: 3px;
+    border: 2px solid #ffa500;
+  }
+
+  ::placeholder {
+  color: black;
+}
+
+</style>
+</head>
+<body>
+
+<form class="form-table">
+  <div class="form-row">
+    <div class="form-label"><label for="full_name">Full Name:</label></div>
+    <div class="form-input"><input type="text" id="full_name" name="full_name" placeholder="Vincent Maverick Durano"></div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-label"><label for="username">Username:</label></div>
+    <div class="form-input"><input type="text" id="username" name="username" placeholder="Vinz"></div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-label"><label for="password">Password:</label></div>
+    <div class="form-input"><input type="password" id="password" name="password" placeholder="••••••••"></div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-label"><label for="re_password">Re Password:</label></div>
+    <div class="form-input"><input type="password" id="password" name="re_password" placeholder="••••••••"></div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-label"><label for="address">Address:</label></div>
+    <div class="form-input"><input type="text" id="address" name="address" placeholder="Cebu, Philippines"></div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-label"><label for="age">Age:</label></div>
+    <div class="form-input"><input type="number" id="age" name="age" placeholder="22"></div>
+  </div>
+
+    <div class="form-row">
+    <div class="form-label"><label for="gender">Gender:</label></div>
+    <div class="form-input">
+      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </div>
+  </div>
+<br>
+  <div class="form-row">
+    <div class="form-input" colspan="2" align="center">
+      <input type="submit" id="save" value="Save">
+    </div>
+  </div>
+</form>
+
+</body>
+</html>
